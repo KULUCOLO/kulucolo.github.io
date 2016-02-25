@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Vince Top</title>
-  
+  <title>KuluColo</title>
+  <subtitle>Welcome Back</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://vincecao.github.io/"/>
-  <updated>2016-02-23T23:02:00.000Z</updated>
+  <updated>2016-02-24T15:05:57.000Z</updated>
   <id>http://vincecao.github.io/</id>
   
   <author>
@@ -17,12 +17,12 @@
   
   <entry>
     <title>我是谁</title>
-    <link href="http://vincecao.github.io/2016/02/23/Aboutus/"/>
-    <id>http://vincecao.github.io/2016/02/23/Aboutus/</id>
-    <published>2016-02-23T23:02:00.000Z</published>
-    <updated>2016-02-23T23:02:00.000Z</updated>
+    <link href="http://vincecao.github.io/2016/02/24/Aboutus/"/>
+    <id>http://vincecao.github.io/2016/02/24/Aboutus/</id>
+    <published>2016-02-24T15:05:57.000Z</published>
+    <updated>2016-02-24T15:05:57.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://m1.img.srcdd.com/farm4/d/2014/0614/14/5642D42A608F7B85F7EC9448D9F22874_LARGE_651_651.jpeg =300x300&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://m1.img.srcdd.com/farm4/d/2014/0614/14/5642D42A608F7B85F7EC9448D9F22874_LARGE_651_651.jpeg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;本小站 &lt;em&gt;(&lt;a href=&quot;http://kulucolo.lofter.com&quot; title=&quot;lofter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;旧站1&lt;/a&gt; &lt;a href=&quot;http://kulucolo.tk&quot; title=&quot;KuluColo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;旧站2&lt;/a&gt;)&lt;/em&gt;是旨在为小编本人以及二次元人士特别是新入坑人员搭建快速补番平台，把一些【值得看】、【很好看】、【超好看】、【有代表性】的旧番通过将互联网上的资源综合管理与整合的方式，提供统一下载，从而快速补番，成为马猴烧酒。&lt;/p&gt;
 &lt;h2 id=&quot;ΦωΦ&quot;&gt;&lt;a href=&quot;#ΦωΦ&quot; class=&quot;headerlink&quot; title=&quot;(ΦωΦ)&quot;&gt;&lt;/a&gt;&lt;center&gt;&lt;a href=&quot;http://bruce-sha.github.io&quot; title=&quot;Follow Us&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;(ΦωΦ)&lt;/a&gt;&lt;/center&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;附：各类编们&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&quot;【小编】&quot;&gt;&lt;a href=&quot;#【小编】&quot; class=&quot;headerlink&quot; title=&quot;【小编】&quot;&gt;&lt;/a&gt;【小编】&lt;/h2&gt;&lt;p&gt;小编，♂，大学狗小精灵，全名小草熊编，高中生的进化型，心地善良，可以用强大的意志力连续补番一整天而不吃不喝，吐槽功力较低，觅食口味独特。据说，如果将几只小草熊编集合起来，并且将它们强烈的补番怨念积存起来的话，可能会发生神奇的事情喔。&lt;/p&gt;
@@ -37,8 +37,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://m1.img.srcdd.com/farm4/d/2014/0614/14/5642D42A608F7B85F7EC9448D9F22874_LARGE_651_651.jpeg =300x300&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本
+      &lt;p&gt;&lt;img src=&quot;http://m1.img.srcdd.com/farm4/d/2014/0614/14/5642D42A608F7B85F7EC9448D9F22874_LARGE_651_651.jpeg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本小站 &lt;em&gt;(&lt;
     
     </summary>
     
