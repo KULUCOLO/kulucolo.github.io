@@ -1,9 +1,6 @@
-# kulucolo.github.io
-for hexo
+## [kulucolo](http://kulucolo.github.io) 是谁
 
-## 我是谁
-
-{% fi http://i.imgur.com/L5T8twt.jpg, alt, logo %}
+![](http://i.imgur.com/L5T8twt.jpg)
 
 本小站 *([旧站址1](http://kulucolo.lofter.com "lofter") [旧站址2](http://kulucolo.tk "KuluColo"))*是旨在为小编本人以及二次元人士特别是新入坑人员搭建快速补番平台，把一些【值得看】、【很好看】、【超好看】、【有代表性】的旧番通过将互联网上的资源综合管理与整合的方式，提供统一下载，从而快速补番，成为马猴烧酒。
 ### <center>(ΦωΦ) [Weibo](http://weibo.com/KuluColo "Follow Us on weibo")</center>
