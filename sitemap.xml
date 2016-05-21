@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://vincecao.github.io/about/index.html</loc>
+    
+    <lastmod>2016-05-21T11:36:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://vincecao.github.io/2014/03/06/%E7%BF%BC%E7%A5%9E%E4%BC%A0%E8%AF%B4/</loc>
+    
+    <lastmod>2016-04-29T22:31:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://vincecao.github.io/2014/07/23/%E5%A5%BD%E6%83%B3%E5%91%8A%E8%AF%89%E4%BD%A0/</loc>
     
     <lastmod>2016-04-29T22:27:19.000Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>http://vincecao.github.io/2014/03/06/%E9%AC%BC%E6%B3%A3/</loc>
     
     <lastmod>2016-04-29T22:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://vincecao.github.io/2014/03/06/%E7%BF%BC%E7%A5%9E%E4%BC%A0%E8%AF%B4/</loc>
-    
-    <lastmod>2016-04-29T22:02:41.000Z</lastmod>
     
   </url>
   
@@ -516,13 +523,6 @@
     <loc>http://vincecao.github.io/2014/08/06/%E7%94%B5%E8%84%91%E7%BA%BF%E5%9C%88/</loc>
     
     <lastmod>2016-03-31T13:54:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://vincecao.github.io/about/index.html</loc>
-    
-    <lastmod>2016-02-27T19:21:24.000Z</lastmod>
     
   </url>
   
