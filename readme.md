@@ -70,4 +70,4 @@
 
 ----------
 
-Kulu Colo, @ 2014 - 2016
+Kulu Colo, @[Vince](https://github.com/vincecao "Vince Cao") 2014 - 2016
