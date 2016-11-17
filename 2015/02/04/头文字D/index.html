@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -18,7 +18,6 @@
 
 
 
-  <meta name="google-site-verification" content="odTQVoGXcSp26TLAdXBMmQDlivK4XKMhY3EkjRpSJCA" />
 
 
 
@@ -28,33 +27,57 @@
 
 
 
-
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="TV,热血,漫画改,剧场版,经典,子安武人,1998,童年,川澄绫子,StudioComet,少年系,有生之年,竞技,豆腐,赛车," />
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
+  
+  
+  
+  
 
-  <link rel="alternate" href="/atom.xml" title="KuluColo" type="application/atom+xml" />
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="TV,漫画改,热血,剧场版,子安武人,1998,少年系,经典,StudioComet,川澄绫子,有生之年,竞技,童年,豆腐,赛车," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -90,19 +113,35 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Muse',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://vincecao.github.io/2015/02/04/头文字D/"/>
+
+
+
+
 
   <title> 头文字D/頭文字D/INITIAL D/イニシャル・ディー | KuluColo </title>
 </head>
@@ -110,6 +149,8 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
+
+
 
 
 
@@ -138,7 +179,6 @@
     </a>
   </div>
   <p class="site-subtitle">Welcome Back</p>
-  <h4><a href="/旧番年表/">旧番年表</a></h4>
 </div>
 
 <div class="site-nav-toggle">
@@ -153,63 +193,47 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
           </a>
         </li>
-
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-            分类
-          </a>
-        </li>
-
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-            关于
-          </a>
-        </li>
-
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
-
       
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
             标签
           </a>
         </li>
+      
 
-      
-        
-
-      
-      
       
     </ul>
   
 
   
 </nav>
+
+
 
  </div>
     </header>
@@ -224,13 +248,26 @@
     
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2015/02/04/头文字D/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -249,24 +286,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-02-04T15:01:01+08:00" content="2015-02-04">
-              2015-02-04
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-02-04T15:01:01+08:00">
+                2015-02-04
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -276,9 +319,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/1990-2000/" itemprop="url" rel="index">
                     <span itemprop="name">1990~2000</span>
                   </a>
@@ -286,35 +328,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/02/04/头文字D/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/02/04/头文字D/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2015/02/04/头文字D/" class="leancloud_visitors" data-flag-title="头文字D/頭文字D/INITIAL D/イニシャル・ディー">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -326,7 +356,7 @@
       
 
       
-        <img src="http://i.imgur.com/XSQQ0zY.jpg" class="full-image" alt="alt">
+        <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/XSQQ0zY.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <p>小草熊的说：</p>
 <p>头文字D系列，6季伴随了我们整20年，可以说也是小编最喜欢的系列之一，这些陪伴成长的经典一部又一部完结实在让人有些伤感。</p>
 <p>在我们普遍的印象里，二次元和三次元间总是有隔阂的，我们总在屏幕的这边憧憬着屏幕那边的世界，然后，继续各自的生活。但这一次事情似乎有些变化，“阴你小弟”的世界，没有动漫以往的美型人设，也没有一贯魔幻热血的奇幻色彩（吐槽翅膀的那个你先听我说完），相反，其映射出的完全就是一个真实的世界。头文字D记录的便是在重野秀一精心布置的那个世界里发生的一段车<del datetime="2015-02-04T05:15:07+00:00">（豆腐）</del>的传奇，另外，该作除了地名地形与现实如出一辙，剩下的还有那让人津津乐道的车了！可以说这种动漫就是我等考据党的天堂啊，基于真实世界的设定让我们可以享受与作者一同严谨的世界观，还随时可以去圣地巡游一番，不错不错，对于车的热情迫使车迷们注定会爱上它，而爱上了它的同时你就成为了车迷。</p>
@@ -335,14 +365,14 @@
 <p>至于整部剧的配乐，在M.O.V.E.和Super Eurobeat俨然已成为头文字D最大的御用歌手的今天，在小编内心中也只有高达系列整整30周年的主题曲能与头文字D系列的音乐相抗衡了，经典至极，多说无益。</p>
 <p>如果你想要追一部关于车的动漫，还不喜欢子贡向的，那么这部头文字D俨然如一个巨人般存在着，它哪里也不会去。</p>
 <a id="more"></a>
-<img src="http://i.imgur.com/rco4uW1.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/cyCWBi2.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/j23L1pi.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/8YDAE6b.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/db4KK8Q.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/Q7bUI7c.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/OE7ffgO.jpg" class="full-image" alt="alt">
-<img src="http://i.imgur.com/vbIDuPQ.jpg" class="full-image" alt="alt">
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/rco4uW1.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/cyCWBi2.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/j23L1pi.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/8YDAE6b.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/db4KK8Q.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/Q7bUI7c.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/OE7ffgO.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://i.imgur.com/vbIDuPQ.jpg" class="full-image" alt="alt"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote>《<strong>头文字D</strong>》（英语：<strong>INITIAL D</strong>，假名：<strong>イニシャル・ディー </strong>）是一部以山道飙车为题材的日本青年漫画，以及以漫画改编的动画系列（包含电视版、OVA与电影版）。漫画作者为重野秀一（しげの秀一），自1995年起开始在讲谈社的《周刊Young Magazine》上连载，连载至2013年7月结束，单行本全48卷，还有多本探讨汽车驾驶技巧的周边专书。<br><br>作者重野秀一已决定结束在《周刊Young Magazine》上的连载，会在2014年5月17日推出最后一话，为这部经典作品划上句号。单行本累积发行近五千万。于2014年8月在日本上映最新电影版三部曲第一集《觉醒》</blockquote>
 
 <h2 id="故事简介"><a href="#故事简介" class="headerlink" title="故事简介"></a>故事简介</h2><blockquote>《头文字D》的男主角藤原拓海是一个刚考上驾照的18岁高中生，平日的他在加油站打工，对于汽车一点概念也没有，因此常被身边爱车族的友人取笑。但是私底下，拓海打从13岁时起，就被父亲藤原文太要求帮忙每天凌晨时开着车到山顶上的温泉饭店送豆腐，因此拥有非常丰富的驾驶经验。身为昔日山路赛车手的文太，刻意利用送豆腐作为理由训练儿子成为一名赛车手，他在车上的置杯架中放了一杯清水，要求拓海在不让杯中清水溢出的前提下，安然将车开上山，借此训练出拓海对于汽车重心转移与运动特性的绝佳敏锐触感。<br><br>在一次阴错阳差下，拓海的高超驾驶技巧终于被周围的人们发现，从此以后他开始遇到许多外地来的车手挑战并且一一克服，并且与当初的对手高桥凉介和高桥启介组成一支县外远征车队，名为Project D(D计划)，一同征战关东境内群马县以外各地山路。</blockquote>
@@ -424,39 +454,54 @@
       
     </div>
 
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/TV/" rel="tag">#TV</a>
+            <a href="/tags/TV/" rel="tag"># TV</a>
           
-            <a href="/tags/热血/" rel="tag">#热血</a>
+            <a href="/tags/漫画改/" rel="tag"># 漫画改</a>
           
-            <a href="/tags/漫画改/" rel="tag">#漫画改</a>
+            <a href="/tags/热血/" rel="tag"># 热血</a>
           
-            <a href="/tags/剧场版/" rel="tag">#剧场版</a>
+            <a href="/tags/剧场版/" rel="tag"># 剧场版</a>
           
-            <a href="/tags/经典/" rel="tag">#经典</a>
+            <a href="/tags/子安武人/" rel="tag"># 子安武人</a>
           
-            <a href="/tags/子安武人/" rel="tag">#子安武人</a>
+            <a href="/tags/1998/" rel="tag"># 1998</a>
           
-            <a href="/tags/1998/" rel="tag">#1998</a>
+            <a href="/tags/少年系/" rel="tag"># 少年系</a>
           
-            <a href="/tags/童年/" rel="tag">#童年</a>
+            <a href="/tags/经典/" rel="tag"># 经典</a>
           
-            <a href="/tags/川澄绫子/" rel="tag">#川澄绫子</a>
+            <a href="/tags/StudioComet/" rel="tag"># StudioComet</a>
           
-            <a href="/tags/StudioComet/" rel="tag">#StudioComet</a>
+            <a href="/tags/川澄绫子/" rel="tag"># 川澄绫子</a>
           
-            <a href="/tags/少年系/" rel="tag">#少年系</a>
+            <a href="/tags/有生之年/" rel="tag"># 有生之年</a>
           
-            <a href="/tags/有生之年/" rel="tag">#有生之年</a>
+            <a href="/tags/竞技/" rel="tag"># 竞技</a>
           
-            <a href="/tags/竞技/" rel="tag">#竞技</a>
+            <a href="/tags/童年/" rel="tag"># 童年</a>
           
-            <a href="/tags/豆腐/" rel="tag">#豆腐</a>
+            <a href="/tags/豆腐/" rel="tag"># 豆腐</a>
           
-            <a href="/tags/赛车/" rel="tag">#赛车</a>
+            <a href="/tags/赛车/" rel="tag"># 赛车</a>
           
         </div>
       
@@ -470,6 +515,8 @@
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -500,13 +547,6 @@
 
           
   <div class="comments" id="comments">
-    
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     
   </div>
 
@@ -539,13 +579,13 @@
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="https://avatars2.githubusercontent.com/u/12581759?v=3&s=460"
+               src="/images/avatar.gif"
                alt="Vince" />
           <p class="site-author-name" itemprop="name">Vince</p>
-          <p class="site-description motion-element" itemprop="description">Share Vince Anime</p>
+          <p class="site-description motion-element" itemprop="description">Share Anime</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -554,20 +594,20 @@
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
-          
+
           
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
+              
                 <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">分类</span>
-              </a>
+              
             </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">595</span>
+                <span class="site-state-item-count">594</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -576,61 +616,38 @@
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/KuluColo" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> weibo
-                  
-                </a>
-              </span>
-            
           
         </div>
 
         
         
 
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">友情链接</p>
-            
-              <span class="links-of-author-item">
-                <a href="http://vincecao.github.io" target="_blank">VINCEC</a>
-              </span>
-            
-          
-        </div>
+        
+        
+
+        
+
 
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#故事简介"><span class="nav-number">1.</span> <span class="nav-text">故事简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-First-Stage"><span class="nav-number">2.</span> <span class="nav-text">音乐 First Stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OP-–-オープニングテーマ"><span class="nav-number">2.1.</span> <span class="nav-text">OP – オープニングテーマ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ED-–-エンディングテーマ"><span class="nav-number">2.2.</span> <span class="nav-text">ED – エンディングテーマ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-Second-Stage"><span class="nav-number">3.</span> <span class="nav-text">音乐 Second Stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OP-–-オープニングテーマ-1"><span class="nav-number">3.1.</span> <span class="nav-text">OP – オープニングテーマ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ED-–-エンディングテーマ-1"><span class="nav-number">3.2.</span> <span class="nav-text">ED – エンディングテーマ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-Third-Stage-INITIAL-D-THE-MOVIE"><span class="nav-number">4.</span> <span class="nav-text">音乐 Third Stage -INITIAL D THE MOVIE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-Fourth-Stage"><span class="nav-number">5.</span> <span class="nav-text">音乐 Fourth Stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OP-–-オープニングテーマ-2"><span class="nav-number">5.1.</span> <span class="nav-text">OP – オープニングテーマ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ED-–-エンディングテーマ-2"><span class="nav-number">5.2.</span> <span class="nav-text">ED – エンディングテーマ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-Fifth-Stage"><span class="nav-number">6.</span> <span class="nav-text">音乐 Fifth Stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OP-–-オープニングテーマ-3"><span class="nav-number">6.1.</span> <span class="nav-text">OP – オープニングテーマ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ED-–-エンディングテーマ-3"><span class="nav-number">6.2.</span> <span class="nav-text">ED – エンディングテーマ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐-Final-Stage"><span class="nav-number">7.</span> <span class="nav-text">音乐 Final Stage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OP-–-オープニングテーマ-4"><span class="nav-number">7.1.</span> <span class="nav-text">OP – オープニングテーマ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ED-–-エンディングテーマ-4"><span class="nav-number">7.2.</span> <span class="nav-text">ED – エンディングテーマ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预览"><span class="nav-number">8.</span> <span class="nav-text">预览</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
+
           </div>
         </section>
+      <!--/noindex-->
       
 
     </div>
@@ -645,7 +662,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2014 - 
+  &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -653,8 +670,9 @@
   <span class="author" itemprop="copyrightHolder">Vince</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -665,342 +683,105 @@
 </div>
 
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
-
-  
-
-
-
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
-
-  
-  
-
-  
-  
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
 
 
 
-  
 
 
 
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'kulucolo';
-      var disqus_identifier = '2015/02/04/头文字D/';
-      var disqus_title = '头文字D/頭文字D/INITIAL D/イニシャル・ディー';
-      var disqus_url = 'http://vincecao.github.io/2015/02/04/头文字D/';
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
 
-      run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
-      
-    </script>
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
   
 
 
 
   
+
+
+
+
+	
+
+
+
+
+  
   
 
   
+
+  
+
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("3CmtutWbud2D1xsBY7UDEkhX-gzGzoHsz", "xUJEMCoN3LKoMwLuVXodPOe7");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
 
 </body>

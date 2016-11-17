@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -18,7 +18,6 @@
 
 
 
-  <meta name="google-site-verification" content="odTQVoGXcSp26TLAdXBMmQDlivK4XKMhY3EkjRpSJCA" />
 
 
 
@@ -28,64 +27,104 @@
 
 
 
-
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, KuluColo" />
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
+  
+  
+  
+  
 
-  <link rel="alternate" href="/atom.xml" title="KuluColo" type="application/atom+xml" />
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
 
 
 
-<meta name="description" content="Share Vince Anime">
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Share Anime">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KuluColo">
 <meta property="og:url" content="http://vincecao.github.io/page/9/index.html">
 <meta property="og:site_name" content="KuluColo">
-<meta property="og:description" content="Share Vince Anime">
+<meta property="og:description" content="Share Anime">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KuluColo">
-<meta name="twitter:description" content="Share Vince Anime">
+<meta name="twitter:description" content="Share Anime">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Muse',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://vincecao.github.io/page/9/"/>
+
+
+
+
 
   <title> KuluColo </title>
 </head>
@@ -93,6 +132,8 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
+
+
 
 
 
@@ -123,7 +164,6 @@
     </a>
   </div>
   <p class="site-subtitle">Welcome Back</p>
-  <h4><a href="/旧番年表/">旧番年表</a></h4>
 </div>
 
 <div class="site-nav-toggle">
@@ -138,63 +178,47 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
           </a>
         </li>
-
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-            分类
-          </a>
-        </li>
-
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-            关于
-          </a>
-        </li>
-
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
-
       
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
             标签
           </a>
         </li>
+      
 
-      
-        
-
-      
-      
       
     </ul>
   
 
   
 </nav>
+
+
 
  </div>
     </header>
@@ -205,21 +229,9 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-
-      
-    
-
     
       
 
-  
   
 
   
@@ -227,6 +239,20 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/18/穿越时空的少女/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -248,24 +274,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-18T04:50:19+08:00" content="2014-03-18">
-              2014-03-18
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-18T04:50:19+08:00">
+                2014-03-18
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/柚编/" itemprop="url" rel="index">
                     <span itemprop="name">柚编</span>
                   </a>
@@ -275,9 +307,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/柚编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -285,35 +316,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/18/穿越时空的少女/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/18/穿越时空的少女/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/18/穿越时空的少女/" class="leancloud_visitors" data-flag-title="穿越时空的少女/時をかける少女 [1080P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -336,14 +355,25 @@
 <p>清新。这是细田守的关键词。不论是《超越时空的少女》那样青涩的清新还是《夏日大作战》那样欢快的清新，清新总是贯穿他的作品始终。只要见到那熟悉的细田守式的画面和贞本义行的人设，清新就扑面而来。人生，这是细田守作品的另一个关键字。细田守非常擅长描绘画卷式的人生片段。细田守最钟爱、最擅长表现的——那些带着些许小科幻的关于人生片段的清新故事。</p>
 <p>细田守的魔力就在于，观影后的兴奋喜爱感慨感动之余，你总是能或多或少把自己的经历和影片联系起来，会觉得很有共鸣，进而自己的经历和生活都变得清澈起来，泛着粼粼波光。</p>
 <p>如果能穿越时空，你想去哪里？是遥远的外太空，还是中世纪的欧洲，亦或是看看未来的自己？我只想回到那些时光的截点，拥抱懵懂无助的自己，告诉那个孩子：没什么的，我在未来等你。<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/18/穿越时空的少女/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -362,13 +392,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/17/四叠半神话大系/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -390,24 +433,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-17T08:00:07+08:00" content="2014-03-17">
-              2014-03-17
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-17T08:00:07+08:00">
+                2014-03-17
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -417,9 +466,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -427,35 +475,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/17/四叠半神话大系/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/17/四叠半神话大系/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/17/四叠半神话大系/" class="leancloud_visitors" data-flag-title="四叠半神话大系/四畳半神話大系/The Tatami Galaxy [1080P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -472,14 +508,25 @@
 <p>小编的说：</p>
 <p>四叠半神话大系，汤浅政明的作品之一，小编当年光看名字就觉得有些很厉害的样子，后来了解才知道，畳（又作叠）日文读作TATAMI，就是榻榻米的意思，所以这部动漫也就围绕着男主四叠半的宿舍/围绕着男主丰富多彩的大学生活而展开。时而让人吐槽不能唯独张着嘴巴，又或者忧郁直至宅们内心的最深处。片中，主人公不算多，除了有男主“我”以外，“我”的好基友是一个有长得很奇怪的小津，以捉弄情侣为乐（简直像恶魔一般啊），师妹明石则是冷艳的黑发少女，同时也是该片的女主。另外还有，小津的“师父”，醉后喜欢乱舔别人脸的牙科护士，竞争对手城崎，人偶香织，算命老婆婆（这个绝对是重要线索）等其他的人物也共同组成了这一“神话”。整个世界观庞大而有趣，绝对说是一部可以让观众一直保持新鲜感的动漫。</p>
 <p>小编自己是很喜欢这种类型的番，轻松惬意，既不卖肉也不商业化，它更接近生活，更能引起共鸣，仿佛就在我们身后，转个身就能抓住似的。因此强烈推荐！<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/17/四叠半神话大系/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -498,13 +545,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/15/星际牛仔/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -526,24 +586,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-15T11:00:56+08:00" content="2014-03-15">
-              2014-03-15
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-15T11:00:56+08:00">
+                2014-03-15
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -553,9 +619,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/1990-2000/" itemprop="url" rel="index">
                     <span itemprop="name">1990~2000</span>
                   </a>
@@ -563,35 +628,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/15/星际牛仔/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/15/星际牛仔/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/15/星际牛仔/" class="leancloud_visitors" data-flag-title="星际牛仔/カウボーイビバップ/cowboy bebop [1080P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -607,14 +660,25 @@
           <p><img src="http://i.imgur.com/beFG8eq.jpg" alt=""></p>
 <p>小编的说：</p>
 <p>不会死丹迪播出后，cowboy bebop似乎重新出现在了我们的视野里，作为一部日升98年出品的动漫，CB既不缺萝卜也不缺预算，在笔者心中更是一部纯粹的艺术片般的存在着。不同于以往的冒险类的热血漫，浪漫与偶然性才是CB的主旋律，是一部时时充满情节乐趣的令小编治（致）愈（郁）无比的作品。渡边叔电影化的风格，典型美式公路范，菅野大神的jazz＆blue，spiker“青椒肉丝”，女神的CV，另外还有充斥其间的各类中国元素。。。。。。反正小编已经说服自己重温一遍的了。。。就让CB，这部经典中经典，再次带于我无与伦比的饕餮享受吧！！（后有小福利）<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/15/星际牛仔/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -633,13 +697,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/13/新世纪福音战士/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -661,24 +738,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-13T05:00:52+08:00" content="2014-03-13">
-              2014-03-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-13T05:00:52+08:00">
+                2014-03-13
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -688,9 +771,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/1990-2000/" itemprop="url" rel="index">
                     <span itemprop="name">1990~2000</span>
                   </a>
@@ -698,35 +780,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/13/新世纪福音战士/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/13/新世纪福音战士/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/13/新世纪福音战士/" class="leancloud_visitors" data-flag-title="新世纪福音战士/新世紀エヴァンゲリオン/Neon Genesis Evangelion [DVDRIP]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -755,14 +825,25 @@
 <p>但不得不提的是对于小编等渔民而言，EVA所阐述的世界观还是过于晦涩，相信大家也不喜欢看一部作品一直百科吧(当然EVA厨们除外啦)。小编也了解到曾有媒体采访过痞子，他说自己也都没能完整的理解其中的具体内涵，只是将自己内心所想的情感注入了这部作品，无论是TV版还是剧场版，痞子所要表达的东西也都是一样的，只是因为时代在变，作品本身也必须做出进步。</p>
 <p>每当我看到基熏和小受深情对望的时候，我都会想起那个用手托住下巴的男人，眼镜后面露出的HENTAI的笑容。。。仿佛痞子在说：一切都按照剧本进行。。。。我坑的就是你们这群儿子们。</p>
 <p>关于EVA小编说的有些多呢(☆_☆)，语句也有些凌乱了，就此打住。作为一个喜欢动漫的人,这一部作品是如论如何都不能错过的。<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/13/新世纪福音战士/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -781,13 +862,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/12/全金属狂潮/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -809,24 +903,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-12T08:33:57+08:00" content="2014-03-12">
-              2014-03-12
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-12T08:33:57+08:00">
+                2014-03-12
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/正义の编/" itemprop="url" rel="index">
                     <span itemprop="name">正义の编</span>
                   </a>
@@ -836,9 +936,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/正义の编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -846,35 +945,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/12/全金属狂潮/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/12/全金属狂潮/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/12/全金属狂潮/" class="leancloud_visitors" data-flag-title="全金属狂潮/フルメタル・パニック！/Full Metal Panic! [全三季][720P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -890,14 +977,25 @@
           <p><img src="http://i.imgur.com/xKjbBRv.jpg" alt=""></p>
 <p>正义の编的说：</p>
 <p>要说优秀的旧番就不得不提到贺东招二的《全金属狂潮》。男主相良宗介似乎拥有了所有的爆笑元素——面瘫、古板、迟钝，由于从小在战场上长大完全不懂如何在和平环境下与人相处。这部作品之所以优秀，是因为它既有校园恋爱爆笑日常，又有热血机战，两大日漫经典元素被紧密地结合在了一起，观众群非常庞大，不论是恋爱迷还是机战控都能感到耳目一新。TV版只有三季真的是一个非常巨大的遗憾！要是以为第三季结尾相良军曹在香港觉醒了一下下把盖茨打败了就万事大吉那就真是大错特错了呢！相良军曹与千鸟要的故事还远远不止这些因为相良军曹还要英雄救美还要挫败世纪阴谋还要表白抱得美人归呢！一切的一切尽都在小说里！小说非常值得一看，当然TV版部分诠释的也很棒！（话说灌篮高手都重制了为什么不把全金属画完啊喂！）<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/12/全金属狂潮/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -916,13 +1014,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/11/HELLSING/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -944,24 +1055,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-11T10:30:47+08:00" content="2014-03-11">
-              2014-03-11
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-11T10:30:47+08:00">
+                2014-03-11
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -971,9 +1088,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -981,35 +1097,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/11/HELLSING/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/11/HELLSING/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/11/HELLSING/" class="leancloud_visitors" data-flag-title="厄夜怪客（皇家国教骑士团）/HELLSING（ヘルシング）[1080P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -1026,14 +1130,25 @@
 <p>小编的说：</p>
 <p>相信大家从配图颜色就可以看出一片血意浓浓的味道了，没错，皇家国教骑士团之前就是一部有着很厉害的战斗系画面，既暴力又血腥的，男主很爱摆pose的，画风也一点不差的，但是却那么点烂尾的TV版。。。原因是没有跟着原作走，所以当时后半段观众们都一直很踊跃的吐槽着。</p>
 <p>不过现在大家已经不用担心了，因为这回小编带来的是新制作的OVA版，依旧那么帅气，重点是不烂尾！！（突然就腰不酸腿不疼了耶<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/11/HELLSING/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -1052,13 +1167,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/10/PEACE-MAKER/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1080,24 +1208,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-10T10:00:24+08:00" content="2014-03-10">
-              2014-03-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-10T10:00:24+08:00">
+                2014-03-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/豆豆编/" itemprop="url" rel="index">
                     <span itemprop="name">豆豆编</span>
                   </a>
@@ -1107,9 +1241,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/豆豆编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -1117,35 +1250,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/10/PEACE-MAKER/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/10/PEACE-MAKER/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/10/PEACE-MAKER/" class="leancloud_visitors" data-flag-title="PEACE MAKER铁/新选组异闻录 [DVDRIP]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -1162,14 +1283,25 @@
 <p>豆豆编的说：</p>
 <p>hi，大家好，我是新的豆豆编（其实之前已经混在小编里面发了一篇了，不算是新来的）。</p>
 <p>《新选组异闻录》改编自人气漫画《新选组异闻 Peace Maker》, 顾名思义乃以幕府时期新选组故事为主线，没有《薄樱鬼》身为女性向动漫的美型细腻，也不像《银魂》老是掉节操，反其道而行，不以热门人物土方，冲田为主而是创造了一个有志青年新生代主角：市村铁之柱。之外，还有各种搞笑的片段与很Q的画风，甚至冲田都可以用美色了是怎么回事啊！！那么长发飘逸这么可爱一定是可爱的男孩子<del>虽然头发扎起后瞬间气场up…存在于人物之间的各种感情也不容错过哟，希望亲们喜欢哟，有什么意见欢迎各种交流哟</del><br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/10/PEACE-MAKER/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -1188,13 +1320,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/10/獣兵衛忍風帖-龍宝玉篇/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1216,24 +1361,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-10T09:00:23+08:00" content="2014-03-10">
-              2014-03-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-10T09:00:23+08:00">
+                2014-03-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -1243,9 +1394,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -1253,35 +1403,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/10/獣兵衛忍風帖-龍宝玉篇/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/10/獣兵衛忍風帖-龍宝玉篇/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/10/獣兵衛忍風帖-龍宝玉篇/" class="leancloud_visitors" data-flag-title="獣兵衛忍風帖 龍宝玉篇/兽兵卫忍风帖 龙宝玉篇 [DVDRIP]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -1298,14 +1436,25 @@
 <p>小编的说：</p>
 <p>本次小编推荐给出的是03年兽兵卫忍风帖TV版，还记得小编当时是因为甲贺忍法帖才知道这部番的，因为大家都有个“帖”字ˊ_&gt;ˋ，虽然都是虐片，看过了才知道兽卫好像更逆天的样子，兽兵卫忍风帖属于那种男主一上来就满级的吧。。血条厚不说，武艺也很高强。而且怪都是一个个人型高达一般，长的各种各样简直都不是人了。［喂</p>
 <p>小编因为时间上面的原因没有看完，所以也不多说什么了，详情请观众姥爷们自己挖掘。另外可能更为人所熟知的则93年的剧场版，川尻善昭的暴力美学在那里展现的淋漓尽致。<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/10/獣兵衛忍風帖-龍宝玉篇/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -1324,13 +1473,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/09/傀儡师左近/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1352,24 +1514,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-09T09:00:20+08:00" content="2014-03-09">
-              2014-03-09
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-09T09:00:20+08:00">
+                2014-03-09
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -1379,9 +1547,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -1389,35 +1556,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/09/傀儡师左近/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/09/傀儡师左近/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/09/傀儡师左近/" class="leancloud_visitors" data-flag-title="傀儡师左近/人形草紙あやつり左近/Puppet Master Sakon [DVDRIP]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -1433,14 +1588,25 @@
           <p><img src="http://i.imgur.com/SHPD78o.jpg" alt=""></p>
 <p>小编的说：</p>
 <p>99年开始放映的推理动漫，（小编认为能与之匹敌的是万年死神小学生和赌上爷爷的金少，所以特地查了下，他们俩分别是96年和97年的开始的动画，长知识了）另外，小编主要看到是小畑健的作品就有些心动了，毕竟棋魂和DN的画风在那摆着，推理剧情都算挺不错，人偶也很创意，音乐堪称经典，就是可能有些老了，不过这依旧不能抹去作为一部推理动漫的魅力。<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/09/傀儡师左近/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -1459,13 +1625,26 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://vincecao.github.io/2014/03/09/东京地震8-0/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Vince">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="KuluColo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="KuluColo" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1487,24 +1666,30 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-09T09:00:20+08:00" content="2014-03-09">
-              2014-03-09
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-09T09:00:20+08:00">
+                2014-03-09
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+              <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/" itemprop="url" rel="index">
                     <span itemprop="name">小草熊编</span>
                   </a>
@@ -1514,9 +1699,8 @@
                 
                   ， 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/小草熊编/2000-2010/" itemprop="url" rel="index">
                     <span itemprop="name">2000~2010</span>
                   </a>
@@ -1524,35 +1708,23 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/09/东京地震8-0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/09/东京地震8-0/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
 
           
           
-             <span id="/2014/03/09/东京地震8-0/" class="leancloud_visitors" data-flag-title="东京地震8.0/東京マグニチュード8.0/Tokyo Magnitude 8.0 [720P]">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+
           
+
+          
+
         </div>
       </header>
     
@@ -1569,14 +1741,25 @@
 <p>小编的说：</p>
 <p>就像名字说的一样，这部动画源因一场里氏8.0的地震，围绕着被弟弟称为“手机星人”的傲娇未来，在第一话获称饮料守护者的小暖男悠贵以及一直以超级奶妈形象帮助姐弟俩的tiger外卖单身妈妈真理姐展开。（后面再让我酝酿一下）</p>
 <p>这片并不完全算是照耀着主角光环的历经艰险的大团圆结局，个中的有关亲情友情等等的小感动就等亲们去挖掘，欢迎大家入坑感受地震期间的各种人情冷暖啦啦啦。<br>
+          <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2014/03/09/东京地震8-0/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
 
     <footer class="post-footer">
       
@@ -1592,7 +1775,6 @@
 
 
     
-
   </section>
 
   
@@ -1627,13 +1809,13 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="https://avatars2.githubusercontent.com/u/12581759?v=3&s=460"
+               src="/images/avatar.gif"
                alt="Vince" />
           <p class="site-author-name" itemprop="name">Vince</p>
-          <p class="site-description motion-element" itemprop="description">Share Vince Anime</p>
+          <p class="site-description motion-element" itemprop="description">Share Anime</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -1642,20 +1824,20 @@
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
-          
+
           
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
+              
                 <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">分类</span>
-              </a>
+              
             </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">595</span>
+                <span class="site-state-item-count">594</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1664,41 +1846,19 @@
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/KuluColo" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> weibo
-                  
-                </a>
-              </span>
-            
           
         </div>
 
         
         
 
-        <div class="links-of-author motion-element">
-          
-            <p class="site-author-name">友情链接</p>
-            
-              <span class="links-of-author-item">
-                <a href="http://vincecao.github.io" target="_blank">VINCEC</a>
-              </span>
-            
-          
-        </div>
+        
+        
+
+        
+
 
       </section>
 
@@ -1716,7 +1876,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2014 - 
+  &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -1724,8 +1884,9 @@
   <span class="author" itemprop="copyrightHolder">Vince</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -1736,51 +1897,30 @@
 </div>
 
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
-
-  
-
-
-
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
 
-  
-  
-
-  
-
-  
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
 
 
 
@@ -1789,126 +1929,69 @@
 
 
   
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
-    <script type="text/javascript">
-      var disqus_shortname = 'kulucolo';
-      var disqus_identifier = 'page/9/index.html';
-      var disqus_title = '';
-      var disqus_url = '';
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-      run_disqus_script('count.js');
-      
-    </script>
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
   
 
 
 
   
+
+
+
+
+	
+
+
+
+
+  
   
 
   
+
+  
+
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("3CmtutWbud2D1xsBY7UDEkhX-gzGzoHsz", "xUJEMCoN3LKoMwLuVXodPOe7");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
 
 </body>
