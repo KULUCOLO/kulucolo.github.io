@@ -1523,7 +1523,11 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
+<<<<<<< HEAD
   background: #ff21ff;
+=======
+  background: #bbf716;
+>>>>>>> parent of e744390... Merge pull request #9 from vincecao/master
 }
 .sidebar-nav {
   margin: 0 0 20px;
